@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Expense Splitter</title>
+  <link rel="stylesheet" href="dsg.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Expense Splitter</h1>
+  </header>
+
+  <main>
+    <section id="trip-planner">
+      <h2>Plan Your Trip</h2>
+      <form id="trip-form">
+        <label for="trip-name">Trip Name:</label>
+        <input type="text" id="trip-name" required>
+
+        <label for="participants">Participants (comma-separated):</label>
+        <input type="text" id="participants" required>
+
+        <label for="expenses">Expenses (one per line, format: Description, Amount, Paid By):</label>
+        <textarea id="expenses" rows="5" required></textarea>
+
+        <button type="submit">Calculate</button>
+      </form>
+    </section>
+
+    <section id="results">
+      <h2>Expense Split</h2>
+      <div id="results-output"></div>
+    </section>
+  </main>
+
+  <script src="itr.js"></script>
+</body>
+</html>
